@@ -1,0 +1,107 @@
+.coments{
+    padding: 100px 0;
+    background-color: #eeeeee;
+    z-index: 5;
+    position: relative;
+
+    &__head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 55px;
+        text-align: center;
+    }
+
+    &__title h2{
+        font-family: $montserrat;
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 1.23;
+        color: $black;
+
+        & span{
+            color: $red;
+        }
+    }
+
+    &__description{
+        font-family: $roboto;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 1.5;
+        color: $black;
+        max-width: 570px;
+    }
+
+    &__wrapper{
+        width: 850px;
+        margin: 0 auto;
+    }
+
+    &__container{
+        overflow: hidden;
+    }
+
+    &__track{
+        display: flex;
+        transition: .5s;
+    }
+
+    &__slider-item{
+        padding: 15px;
+        background-color: $white;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    &__img{
+        margin-right: 30px;
+    }
+
+    &__item-text p{
+        font-family: $roboto;
+        font-weight: 400;
+        font-size: 1rem;
+        color: $black;
+        line-height: 20px;
+        text-align: left;
+
+        & + p{
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+    }
+
+    &__buttons{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        justify-content: center;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 880px) {
+    .coments{
+        &__wrapper{
+            width: 500px;
+        }
+    }
+}
+@media (max-width: 520px) {
+    .coments{
+        &__wrapper{
+            width: 300px;
+        }
+
+        &__item-text p{
+            font-size: 10px;
+            text-align: center;
+    
+        }
+    }
+}

@@ -1,0 +1,125 @@
+.offer {
+    padding: 60px;
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 45px;
+
+        &-text {
+            text-align: center;
+            color: $black;
+            font-family: $montserrat;
+            line-height: 1.35;
+            font-weight: 700;
+            font-size: 29px;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        gap: 100px;
+        align-items: flex-start;
+    }
+
+    &__info-item {
+        padding: 25px 60px;
+        background-color: $white;
+        border-radius: 30px;
+        box-shadow: 0px 6px 6px 6px rgb(0 0 0 / 30%);
+        text-align: center;
+        font-family: $roboto;
+
+        &+.offer__info-item {
+            margin-top: 30px;
+        }
+    }
+
+    &__info-num {
+        font-size: 74px;
+        line-height: 1.55;
+        font-weight: 700;
+        color: $red;
+
+    }
+
+    &__info-description {
+        font-size: 19px;
+        line-height: 1.45;
+        font-weight: 500;
+        color: $black;
+    }
+}
+
+@media (max-width: 1500px) {
+    .offer{
+        &__inner{
+            flex-direction: column;
+            align-items: center;
+            gap: 100px;
+        }
+
+        &__info{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        &__info-item{
+            &+.offer__info-item {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    iframe{
+        width: 700px;
+    }
+}
+@media (max-width: 750px) {
+    .offer{
+        &__info{
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+
+}
+@media (max-width: 700px) {
+    iframe{
+        width: 600px;
+        height: 500px;
+    }
+}
+@media (max-width: 650px) {
+    iframe{
+        width: 500px;
+        height: 400px;
+    }
+}
+@media (max-width: 550px) {
+    .offer{
+        &__title-text{
+            font-size: 22px;
+        }
+    }
+    iframe{
+        width: 400px;
+        height: 300px;
+    }
+}
+@media (max-width: 450px) {
+    iframe{
+        width: 300px;
+        height: 200px;
+    }
+}
+@media (max-width: 420px) {
+    .offer{
+        &__title-text{
+            font-size: 16px;
+        }
+    }
+}
